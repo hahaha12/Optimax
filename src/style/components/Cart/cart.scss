@@ -1,0 +1,25 @@
+.cart {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: rgb(43 39 39 / 30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+
+  &__container {
+    overflow-y: scroll;
+    width: 70%;
+    height: 85%;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    &__items-container {
+      display: flex;
+      margin-top: 50px;
+      flex-direction: column;
+      grid-row-gap: 10px;
+    }
+  }
+}

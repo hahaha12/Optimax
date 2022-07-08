@@ -1,0 +1,81 @@
+.items {
+  width: 95%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px -3px rgb(0 0 0 / 7%), 0 10px 20px -2px rgb(0 0 0 / 4%);
+
+  &__delete {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    color: rgb(252, 22, 22);
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &__info {
+    width: 65%;
+    &__description {
+      width: 80%;
+      font-size: 13px;
+    }
+  }
+  &__count {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    &__total {
+      &__count {
+        width: max-content;
+        font-size: 20px;
+        span {
+          color: blue;
+          font-weight: 700;
+        }
+      }
+    }
+    &__counter {
+      display: flex;
+      grid-gap: 10px;
+      height: 40px;
+      align-items: center;
+
+      &__click {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        background: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .disable {
+        background: darkgray;
+      }
+      input {
+        height: 30px;
+        width: 50px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
